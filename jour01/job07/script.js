@@ -7,25 +7,23 @@ function jourTravaille(date) {
         "01/05/2024"  // Fête du Travail
     ];
 
-    // Date au format jour/mois/année
-    const jour = ('0' + date.getDate()).slice(-2);
-    const mois = ('0' + (date.getMonth() + 1)).slice(-2); // Les mois sont indexés à partir de 0
-    const annee = date.getFullYear();
-    const dateFormatfr = `${jour}/${mois}/${annee}`; //$ sert Interpolations de chaînes de caractères: Dans les chaînes de caractères en JavaScript (en particulier avec les modèles de chaînes de caractères), $ n'a pas de signification particulière, il est simplement traité comme n'importe quel autre caractère. 
+    // Obtenir la date au format jour/mois/année : day au format : 2-digit pour deux chiffres , month et weekday au format : long pour un texte long et year en numerci pour so
+    const options = { day: '2-digit', month: 'long', year: 'numeric', weekday: 'long' };
+    const dateFormatfr = date.toLocaleDateString('fr-FR', options);
 
     // Vérifier si la date est un jour férié
-    if (joursFeries.includes(dateFormatfr)) {
+    if (joursFeries.includes(date.toLocaleDateString('fr-FR'))) {
         return `Le ${dateFormatfr} est un jour férié.`;
     }
 
     // Vérifier si la date est un samedi ou un dimanche (0 est dimanche, 6 est samedi)
     const jourSemaine = date.getDay();
     if (jourSemaine === 0 || jourSemaine === 6) {
-        return `Non, le ${dateFormatfr} est un week-end.`;
+        return `Non, ${dateFormatfr} est un week-end.`;
     }
-    else 
+    
     // Sinon, c'est un jour travaillé
-    return `Oui, le ${dateFormatfr} est un jour travaillé.`;
+    return `Oui, ${dateFormatfr} est un jour travaillé.`;
 }
 
 // Utilisation de la fonction avec deux exemples de dates

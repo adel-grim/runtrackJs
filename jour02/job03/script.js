@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-        function incrementerCompteur() {          // Fonction pour incrémenter le compteur et mettre à jour l'affichage
+        function addOne() {          // Fonction pour incrémenter le compteur et mettre à jour l'affichage
        
         let compteurElement = document.getElementById("compteur");  // Récupérer l'élément du compteur
 
@@ -11,5 +11,5 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     // Ajouter un gestionnaire d'événements au bouton pour appeler la fonction d'incrémentation lorsqu'il est cliqué
-    document.getElementById("button").addEventListener("click", incrementerCompteur);
+    document.getElementById("button").addEventListener("click", addOne);
 });

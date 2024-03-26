@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     window.addEventListener("scroll", function() {  // ecouteur pour savoir quand l'utilisateur scroll
         let scrollPercentage = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;  //calcul du pourcentage de defilement de la page
+        footer.style.width = scrollPercentage + "%";     // Réglage de la largeur du footer en fonction du pourcentage de défilement
         footer.style.backgroundColor = getColor(scrollPercentage);  // definit la couleur du footer en fonction du pourcentage de scroll grace la variable juste avant et recupere la couleur grace la fonction getColor juste en bas
     });
 

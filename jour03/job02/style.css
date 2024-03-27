@@ -1,0 +1,22 @@
+
+.droppable {
+    width: 800px;
+    height: 400px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 5px;
+    
+    margin-top: 20px;
+    background-color: lightgray;
+    margin-top: 20px;
+    border: solid;
+}
+
+.droppable-cell { 
+    gap: 5px;
+    
+    margin-top: 20px;
+   width: 133px;
+   height: 399px;
+}

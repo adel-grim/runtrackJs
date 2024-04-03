@@ -4,116 +4,79 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Job01</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    
 </head>
 <body>
       <!-- Header -->
-  <header>
-    <nav>
-      <div class="nav-wrapper indigo darken-1">
-        <a href="#" class="brand-logo">Job 01</a>
-        <ul id="nav-mobile" class="right hide-on-med-and-down">
-          <li><a href="index.html">Accueil</a></li>
-          <li><a href="index.html">Inscription</a></li>
-          <li><a href="index.html">Connexion</a></li>
-          <li><a href="index.html">Rechercher</a></li>
-        </ul>
-      </div>
-    </nav>
-  </header>
-
-  <!-- Content goes here -->
-<main>
-    <div class="container">
-        <section>
-          <h2>Formulaire</h2>
-          <form>
-            <p>
-              <label>
-                <input name="civilite" type="radio" />
-                <span>M.</span>
-              </label>
-            </p>
-            <p>
-              <label>
-                <input name="civilite" type="radio" />
-                <span>Mme</span>
-              </label>
-            </p>
-            <div class="input-field">
-              <input id="prenom" type="text" class="validate">
-              <label for="prenom">Prénom</label>
-            </div>
-            <div class="input-field">
-              <input id="nom" type="text" class="validate">
-              <label for="nom">Nom</label>
-            </div>
-            <div class="input-field">
-              <input id="adresse" type="text" class="validate">
-              <label for="adresse">Adresse</label>
-            </div>
-            <div class="input-field">
-              <input id="email" type="email" class="validate">
-              <label for="email">Email</label>
-            </div>
-            
-            <div class="input-field">
-              <input id="password" type="password" class="validate">
-              <label for="password">Mot de passe</label>
-            </div>
-            
-            <div class="input-field">
-              <input id="password-confirm" type="password" class="validate">
-              <label for="password-confirm">Confirmer le mot de passe</label>
-            </div>
-           
-        <p>Choisissez vos passions :</p>
-        <p>
+    <!-- Header -->
+    <header>
+        <nav>
+          <a href="#">Accueil</a>
+          <a href="#">Inscription</a>
+          <a href="#">Connexion</a>
+          <a href="#">Rechercher</a>
+        </nav>
+      </header>
+    
+      <!-- Content -->
+      <section>
+        <h2>Créer un compte</h2>
+        <form>
           <label>
-            <input type="checkbox" />
-            <span>Informatique</span>
+            Civilité:<br>
+            <input type="radio" name="civilite" value="M.">M.
+            <input type="radio" name="civilite" value="Mme">Mme
           </label>
-        </p>
-        <p>
           <label>
-            <input type="checkbox" />
-            <span>Voyages</span>
+            Prénom:<br>
+            <input type="text" name="prenom">
           </label>
-        </p>
-        <p>
           <label>
-            <input type="checkbox" />
-            <span>Sport</span>
+            Nom:<br>
+            <input type="text" name="nom">
           </label>
-        </p>
-        <p>
           <label>
-            <input type="checkbox" />
-            <span>Lecture</span>
+            Adresse:<br>
+            <input type="text" name="adresse">
           </label>
-        </p>
-
-            <button class="btn waves-effect waves-light" type="submit" name="action">Valider</button>
-          
+          <label>
+            Email:<br>
+            <input type="email" name="email">
+          </label>
+          <label>
+            Mot de passe:<br>
+            <input type="password" name="password">
+          </label>
+          <label>
+            Confirmer le mot de passe:<br>
+            <input type="password" name="password-confirm">
+          </label>
+          <p>Choisissez vos passions :</p>
+          <label>
+            <input type="checkbox" name="passion" value="Informatique">Informatique
+          </label>
+          <label>
+            <input type="checkbox" name="passion" value="Voyages">Voyages
+          </label>
+          <label>
+            <input type="checkbox" name="passion" value="Sport">Sport
+          </label>
+          <label>
+            <input type="checkbox" name="passion" value="Lecture">Lecture
+          </label>
+          <button type="submit">Créer un compte</button>
         </form>
-        </section>
-      </div>
-</main>
-  <!-- Footer -->
-  <footer class="page-footer indigo darken-1">
-        <div class="container">
-          <div class="row">
-            <div class="col s12">
-              <ul class="row white-text">
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="index.html">Inscription</a></li>
-                <li><a href="index.html">Connexion</a></li>
-                <li><a href="index.html">Rechercher</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
+      </section>
+    
+      <!-- Footer -->
+      <footer>
+        <nav>
+          <a href="#">Accueil</a>
+          <a href="#">Inscription</a>
+          <a href="#">Connexion</a>
+          <a href="#">Rechercher</a>
+        </nav>
       </footer>
+    
 </body>
 </html>

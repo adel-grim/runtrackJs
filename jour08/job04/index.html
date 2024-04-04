@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+  <title>Job04</title>
+</head>
+<body class="bg-gray-100">
+  <header>   
+    <nav class="bg-green-500 text-white p-5 text-right space-x-4">
+      <a href="index.html" class="inline-block">Accueil</a>
+      <a href="index.html" class="inline-block">Inscription</a>
+      <a href="index.html" class="inline-block">Connexion</a>
+      <a href="index.html" class="inline-block">Rechercher</a>
+    </nav>
+  </header>
+
+  <main class="flex justify-center items-center mt-10">
+    
+    <section class="bg-white rounded shadow-md p-8 max-w-lg w-full">
+      <h2 class="text-2xl font-semibold mb-6">Formulaire</h2>
+      <form>
+        <div class="mb-4">
+          <label class="block text-gray-700 text-sm font-bold mb-2" for="gender">
+            Vous êtes:
+          </label>
+          <div class="flex items-center">
+            <input id="male" type="radio" class="w-4 h-4 text-blue-500 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" name="gender">
+            <label for="male" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Un homme</label>
+            <input id="female" type="radio" class="w-4 h-4 text-pink-500 border-gray-300 focus:ring-pink-500 dark:focus:ring-pink-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600 ml-4" name="gender">
+            <label for="female" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Une femme</label>
+          </div>
+        </div>
+        <div class="mb-4">
+          <label class="block text-gray-700 text-sm font-bold mb-2" for="prenom">
+            Prénom:
+          </label>
+          <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="prenom" type="text" placeholder="Saisissez votre Prénom">
+        </div>
+        <div class="mb-4">
+          <label class="block text-gray-700 text-sm font-bold mb-2" for="nom">
+            Nom:
+          </label>
+          <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="nom" type="text" placeholder="Saisissez votre Nom">
+        </div>
+        <div class="mb-4">
+          <label class="block text-gray-700 text-sm font-bold mb-2" for="adresse">
+            Adresse:
+          </label>
+          <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="adresse" type="text" placeholder="Saisissez votre Adresse">
+        </div>
+        <div class="mb-4">
+          <label class="block text-gray-700 text-sm font-bold mb-2" for="email">
+            Mail:
+          </label>
+          <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" placeholder="Saisissez votre Mail" type="email" id="email" pattern=".+@example\.com" size="23" required />
+        </div>
+        <div class="mb-4">
+          <label class="block text-gray-700 text-sm font-bold mb-2" for="password">
+            Mot de passe:
+          </label>
+          <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" placeholder="Saisissez votre mot de passe" type="password" id="password" minlength="8" size="15" required />
+        </div>
+        <div class="mb-4">
+          <label class="block text-gray-700 text-sm font-bold mb-2" for="confirm_password">
+            Confirmez votre mot de passe:
+          </label>
+          <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" type="password" placeholder="Confirmez votre mot de passe" id="confirm_password" required>
+        </div>
+        <div class="mb-4">
+          <fieldset>
+            <legend class="block uppercase tracking-wide text-gray-700 text-sm font-bold mb-2">Sélectionnez vos passions</legend>
+            <div class="mt-2">
+              <input type="checkbox" id="info" name="interest" value="info" checked />
+              <label class="text-gray-700" for="info">Informatique</label>
+            </div>
+            <div class="mt-2">
+              <input type="checkbox" id="voyages" name="interest" value="voyages" />
+              <label class="text-gray-700" for="voyages">Voyages</label>
+            </div>
+            <div class="mt-2">
+              <input type="checkbox" id="sport" name="interest" value="sport" />
+              <label class="text-gray-700" for="sport">Sport</label>
+            </div>
+            <div class="mt-2">
+              <input type="checkbox" id="lecture" name="interest" value="lecture" />
+              <label class="text-gray-700" for="lecture">Lecture</label>
+            </div>
+          </fieldset>
+        </div>
+        <div class="mb-4">
+          <button class="bg-green-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" type="submit">Valider</button>
+        </div>
+      </form>
+    </section>
+  </main>
+  <footer class="bg-green-500 text-white p-5 text-left space-x-4">
+    <a href="index.html">Accueil</a>
+    <a href="index.html">Inscription</a>
+    <a href="index.html">Connexion</a>
+    <a href="index.html">Rechercher</a>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calendrier Bootstrap</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">Calendrier</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  </header>
+  
+  <style>
+    .day {
+      border: 1px solid #dee2e6;
+      padding: 20px;
+      height: 150px;
+    }
+    .btn-day {
+      width: 100%;
+      height: 100%;
+      padding: 0;
+    }
+    .btn-lundi {
+      background-color: #dc3545; /* Couleur rouge */
+    }
+    .btn-samedi {
+      background-color: #dc3545; /* Couleur rouge */
+    }
+    .btn-dimanche {
+      background-color: #dc3545; /* Couleur rouge */
+    }
+    .btn-mardi {
+      background-color: #28a745; /* Couleur verte */
+    }
+    .btn-mercredi {
+      background-color: #28a745; /* Couleur verte */
+    }
+    .btn-jeudi {
+      background-color: #28a745; /* Couleur verte */
+    }
+    .btn-vendredi {
+      background-color: #28a745; /* Couleur verte */
+    }
+  </style>
+</head>
+<body>
+  <div class="container mt-5">
+    <h2 class="text-center mb-4">Calendrier du 09/04/2024 au 16/04/2024</h2>
+    <div class="row">
+      <!-- Lundi 09/04/2024 -->
+      <div class="col-1 day">
+        <button class="btn btn-day btn-lundi" onclick="showAlert('Lundi 09/04/2024')">Lun<br>09/04</button>
+      </div>
+      <!-- Mardi 10/04/2024 -->
+      <div class="col-1 day">
+        <button class="btn btn-day btn-mardi" onclick="showAlert('Mardi 10/04/2024')">Mar<br>10/04</button>
+      </div>
+      <!-- Mercredi 11/04/2024 -->
+      <div class="col-1 day">
+        <button class="btn btn-day btn-mercredi" onclick="showAlert('Mercredi 11/04/2024')">Mer<br>11/04</button>
+      </div>
+      <!-- Jeudi 12/04/2024 -->
+      <div class="col-1 day">
+        <button class="btn btn-day btn-jeudi" onclick="showAlert('Jeudi 12/04/2024')">Jeu<br>12/04</button>
+      </div>
+      <!-- Vendredi 13/04/2024 -->
+      <div class="col-1 day">
+        <button class="btn btn-day btn-vendredi" onclick="showAlert('Vendredi 13/04/2024')">Ven<br>13/04</button>
+      </div>
+      <!-- Samedi 14/04/2024 -->
+      <div class="col-1 day">
+        <button class="btn btn-day btn-samedi" onclick="showAlert('Samedi 14/04/2024')">Sam<br>14/04</button>
+      </div>
+      <!-- Dimanche 15/04/2024 -->
+      <div class="col-1 day">
+        <button class="btn btn-day btn-dimanche" onclick="showAlert('Dimanche 15/04/2024')">Dim<br>15/04</button>
+      </div>
+      <!-- Lundi 16/04/2024 -->
+      <div class="col-1 day">
+        <button class="btn btn-day btn-lundi" onclick="showAlert('Lundi 16/04/2024')">Lun<br>16/04</button>
+      </div>
+    </div>
+  </div>

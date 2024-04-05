@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#"> Inscription</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </header>
+
+
+    <main>
+        <div class="container mt-5">
+            <h2 class="text-center mb-4">Inscription</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <form id="inscriptionForm">
+                        <div class="form-group">
+                            <label for="nom">Nom:</label>
+                            <input type="text" class="form-control" id="nom" name="nom" required>
+                            <span class="error text-danger" id="nomError"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="prenom">Prénom:</label>
+                            <input type="text" class="form-control" id="prenom" name="prenom" required>
+                            <span class="error text-danger" id="prenomError"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" class="form-control" id="email" name="email" required>
+                            <span class="error text-danger" id="emailError"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="adresse">Adresse:</label>
+                            <input type="text" class="form-control" id="adresse" name="adresse" required>
+                            <span class="error text-danger" id="adresseError"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="cp">Code Postal:</label>
+                            <input type="number" class="form-control" id="cp" name="cp" required>
+                            <span class="error text-danger" id="cpError"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="password">Mot de Passe:</label>
+                            <input type="password" class="form-control" id="password" name="password" required>
+                            <span class="error text-danger" id="passwordError"></span>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-block">S'inscrire</button>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="../Js/inscription.js"></script>
+</body>
+</html>
